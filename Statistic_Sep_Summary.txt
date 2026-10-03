@@ -1,0 +1,243 @@
+9月份总结 (Total cases 49)
+Operator = 45
+Internal Team = 4
+
+Operator (45 cases: GSG x20, GSC+ x11, API Operation Team x7, Provider x3, Payment Gateway x1, Direct Line x1, GSC x1, GSI x1)
+
+2/9
+- GS-API-BOOKBET789: WS Sport 和 CMD 密码重置了两次都无法成功登录。
+解决：重新处理密码重置，WS Sport (RP-10369) 于 4/9 完成、CMD (RP-10378) 于 9/9 完成后可以登录。Resolved
+https://gamingsoftjcmm.atlassian.net/browse/RP-10369
+https://gamingsoftjcmm.atlassian.net/browse/RP-10378
+- YCBET: 会员 2052992026 的 Game Record Details 无法加载显示。
+解决：开 GAP-4054 加急给 GSC+ 后，4/9 修复该会员记录显示。Resolved
+https://gamingsoft.atlassian.net/browse/GAP-4054
+
+3/9
+- 很多 operator 反馈 Evolution Gaming 突然 Down，问了 Provider 并没有明确说有维护，转发给 GSG/GSC/CMMPRO 团队协助检查。
+解决：当天检查后恢复访问。Resolved
+https://gamingsoftjcmm.atlassian.net/browse/ZOVU-850
+https://gamingsoftjcmm.atlassian.net/browse/JUT-583
+https://gamingsoftjcmm.atlassian.net/browse/CROW-1057
+https://gamingsoftjcmm.atlassian.net/browse/JKML-367
+https://gamingsoftjcmm.atlassian.net/browse/TOP8-745
+https://gamingsoftjcmm.atlassian.net/browse/GI-29029
+
+4/9
+- CMD 维护完成后有好几个 operator 反馈不能登入不能转账。
+解决：提交 programmer 协助后当天修复。Resolved
+https://prnt.sc/0_Kn2lUFei7m
+https://gamingsoftjcmm.atlassian.net/browse/V12WIN-269
+https://gamingsoftjcmm.atlassian.net/browse/ZOVU-851
+https://gamingsoftjcmm.atlassian.net/browse/W138-453
+https://gamingsoftjcmm.atlassian.net/browse/NX2PL-313
+https://gamingsoftjcmm.atlassian.net/browse/AS128-245
+https://gamingsoftjcmm.atlassian.net/browse/SS-2333
+
+5/9
+- GS(CAM) TEAM A 会员 Vijaya 在 Sexy baccarat cancel 后，GSC+ 没有记录但 GSG 卡在 In Progress 导致玩家失分。重复问题 (OUIO-412 / OUIO-418 / OUIO-421)。
+解决：programmer 没有说明 root cause，9/9 以 repull report 更新状态后结案。Resolved
+https://gamingsoftjcmm.atlassian.net/browse/OUIO-426
+
+7/9
+- AURABET: Ezugi INR 显示 disabled，技术从 26/8 回复与供应商检查后一直没有更新，operator 投诉处理时间很久。
+解决：11/9 供应商侧处理后恢复。Resolved
+https://prnt.sc/h6pmhlXgCBMh
+https://gamingsoft.atlassian.net/browse/GAP-3945
+- AURABET: 27/8 开的单询问剩下未收到的产品状态，到现在都未收到回复，operator 投诉处理时间很久。
+目前仍 Pending Resolve。
+https://gamingsoftjcmm.atlassian.net/browse/APIS-3748
+- BO88: Saba 体育注单供应商后台结算为输，但 GSC+ 显示赢，同一个 wager no 有两笔记录，operator 反馈没有收到 settlement callback。
+解决：10/9 GSC+ 修复结算显示。Resolved
+https://gamingsoft.atlassian.net/browse/GAP-4087
+
+9/9
+- SHWE KAN KAUNG: 1.29am Top up GSC+ 没有自动 approve，Provider 半夜没回复，operator 一直催。
+解决：Provider 7.41am 调整后自动 approve 成功。Resolved
+https://prnt.sc/e5xAw6Ntwkkj
+https://prnt.sc/wD_F4gfnaL_P
+
+10/9
+- Wow Gaming 要开 GCT5 1:130 ratio，Operation team 开了 GCT，provider 说开错了，处理时间也比较久。
+解决：22/9 更正 currency 设置后完成。Resolved
+https://gamingsoftjcmm.atlassian.net/browse/AI-15955
+
+11/9
+- Smvegas MY: Operator 希望 GSG 后台能直接看到 Evolution 完整 bet details（bet id、成绩、投注、回放），方便自己查询不用每次找 CS。
+目前仍 Pending Resolve。
+https://t.me/c/2237158924/9410
+- HKGAME: BNG report 在 GSC BO 没有更新，技术回复暂时 out of service 需要做调整，只影响报表。
+解决：17/9 技术调整后报表恢复更新。Resolved
+https://gamingsoftjcmm.atlassian.net/browse/GI-29099
+- CL1356: Operator 收到的账号 prefix 是 'FB8C'（属于博乐会所 GSG opcode），但他们 sub account 应该是 'XDHK' 开始，怀疑提供了错误 account。
+目前仍 Pending Resolve。
+https://gamingsoftjcmm.atlassian.net/browse/GI-29090
+https://gamingsoftjcmm.atlassian.net/browse/AI-15976
+
+14/9
+- Ace Circle: SV388 注单超过 3 小时未派彩。
+解决：provider 确认该局因 network fluctuations 失败，17/9 处理后结案。Resolved
+- SCFLY: API-16677 是 7/7 提交的申请，到 14/9 还没收到 credential，operator 投诉很久。
+解决：17/9 已提供 credential。Resolved
+https://gamingsoftjcmm.atlassian.net/browse/APIS-3761
+- 多个 operator 反馈 access CMD 一直 show 'loading content'，注单 history 也看不到，是 provider 问题。Tracking no: TCPR-1650。
+解决：provider 处理后 16/9 恢复。Resolved
+https://prnt.sc/_Q9AC63yTX9Y
+https://prnt.sc/bKXBBcb9swhq
+
+16/9 - 17/9
+- 128MEGA JILI 产品突然 Account Disabled 无法进入游戏。Provider 说 because of a currency setting error 先 disable 了 agent。
+解决：API Operation Team 以 MYR reactive，18/9 恢复。Resolved
+https://gamingsoftjcmm.atlassian.net/browse/AI-15999
+- HWT (JILI): 很多 JILI 账号没有完成创建，Operator 无法开启游戏。
+目前仍 Pending Resolve。
+https://gamingsoftjcmm.atlassian.net/browse/AI-16000
+- ALVA ALVARONTECH 着急要开启 Betby 和 Digitain TRY。Betby 已经好了，Digitain 仍 pending currency。
+目前仍 Pending Resolve。
+https://gamingsoft.atlassian.net/browse/GAA-831
+- 博乐会所 BBIN 真人一直登入不到，provider 多次调 IP 后测试员依然无法登入，甚至建议 Teamviewer 连 operator。CS/AM 认为不合适并拒绝。
+解决：Provider 确认线路正常，建议 operator 换 IP/电信后重试。operator 之后没有再回复，当作 Resolved。
+
+18/9
+- HU67: GSC+ top up 后台显示的 min max 是 KRW value 不是即时汇率，operator 按 min 提交后实际 USDT 不到 500U 最低标准，后台显示跟实际付款逻辑矛盾，容易让 operator 混乱。
+解决：已开 GAP-4145 反馈 programmer（后台 min/max 不是即时汇率，要 operator 自行换算 500U），当天记录并结案。Resolved
+https://gamingsoft.atlassian.net/browse/GAP-4145
+- Gowin: 几个玩家 WM Casino 遗失金额。重复问题 (GOW-56 / GOW-62)。
+解决：确认注单在厂商不成立/投注失败，技术手动取消注单后款项退回会员。Resolved
+https://gamingsoft.atlassian.net/browse/GOW-64
+
+19/9
+- 微博帝国: 提交 deposit 时看不到某个 promotion。
+解决：programmer 修复 promotion setting，并安排 next working day full update。Resolved
+https://gamingsoftjcmm.atlassian.net/browse/AM1083-733
+- LIONCITYBET: CMD odds 会自动更换（HK → Malay / Decimal），provider 先说正常。
+解决：GSG programmer enhance code 后叫 player 重试。Resolved
+https://gamingsoftjcmm.atlassian.net/browse/LN-860
+
+21/9
+- A1SKM: 早上 7:50 GSC+ 自动充值失败，需要等 GSPAY USDT 查询，差不多 8:30 才有消息，客户催了很多次。客户建议提供备用充值方案（Pre-Topup）。
+解决：GSPAY 查到转账成功并回调后到账。Resolved
+- LIVE345: GSG BO loading 慢，进 BO / 按 module 都会卡。
+解决：当天稍后恢复。Resolved
+- Holabet168: GSG BO very lagging。
+解决：当天稍后恢复。Resolved
+https://gamingsoftjcmm.atlassian.net/browse/TT-261
+- HEY66: Frontend cannot load。重复问题 (HEY6-164)。
+解决：22/9 frontend 恢复可 load。Resolved
+https://gamingsoftjcmm.atlassian.net/browse/HEY6-185
+- HEY66: 发了两次 product credential 还是登入不到后台，API operation team 没有正面确认能不能登入，只是重发 credential。
+解决：确认是 BO URL 不正确，发给正确后台链接后可以登入。Resolved
+https://gamingsoftjcmm.atlassian.net/browse/RP-10469
+
+22/9
+- MRLOT: 询问能否跳过测试直接提供正式环境账号，programmer 回复答非所问（先说要重新申请，又说要到后台新增子代理）。
+解决：后续 GAS-4073 已处理完成（9/24 结案）。Resolved
+https://gamingsoft.atlassian.net/browse/GAS-4073
+- YCBET: 加白 GSC+ API 一个简单请求，programmer 有 react JIRA 但一直没处理好，operator 不停催。
+解决：当天完成 GSC+ API IP whitelist。Resolved
+https://gamingsoft.atlassian.net/browse/GAP-4160
+- FTW99: GSG 后台 timeout / 502 bad gateway。
+解决：过后自动恢复，怀疑 Cloudflare 问题（类似 TTWIN-267）。Resolved
+- Tiger888 BDT: Evolution / Spribe / PP / SABA 在 GSG BO 显示 in progress，GSC+ 没记录。
+解决：TIGERBDT-67 后续已处理，GSG in progress 状态已更新。Resolved
+https://gamingsoftjcmm.atlassian.net/browse/TIGERBDT-67
+- MBX96 / Alibaba33 / Holabet168: BO 不稳定，programmer 说是 SG IP 问题，先叫用 MY IP。Holabet168 已经正常。
+MBX96 和 Alibaba33 还在等 programmer 回复，目前仍 Pending Resolve。
+https://gamingsoftjcmm.atlassian.net/browse/MBX96-253
+https://gamingsoftjcmm.atlassian.net/browse/ALIBABA33-823
+https://gamingsoftjcmm.atlassian.net/browse/TT-262
+- HEY66: 很多 bet 在 GSG 显示 in progress，但 GSC+ 已经 settle。
+解决：programmer 确认为 unstable connections between GSC+ and GSG servers，会继续 monitor。Resolved
+https://gamingsoftjcmm.atlassian.net/browse/HEY6-188
+
+21/9 - 24/9 (多个 GSG Operator)
+- GSG BO / Frontend 反复出现 lag / timeout / 502 / keep loading。22/9 有说是 SG IP 问题，24/9 多家 operator 同时反馈 BO load 不出来，programmer 说可能与 CDN 供应商有关。这个月 GSG BO/frontend loading 类问题重复出现多次。
+解决：HEY6-192 已经恢复。V12WIN-276 还在等 programmer 回复，目前仍 Pending Resolve。
+https://gamingsoftjcmm.atlassian.net/browse/HEY6-192
+https://gamingsoftjcmm.atlassian.net/browse/V12WIN-276
+
+24/9
+- Onyx2play: 已 block 的 suspicious player 还是可以一直提交 deposit ticket。
+解决：programmer 新增 DisableMultiDeposit app setting，有 pending ticket 时不能再多次 deposit。Resolved
+https://gamingsoftjcmm.atlassian.net/browse/NX2PL-320
+
+25/9
+- ROCKET: Playtech 下注不到，因为 GSC+ Playtech account 没分数，top up 一天了都不好。
+解决：TUR-21996 完成 top up 后可以下注。Resolved
+https://gamingsoft.atlassian.net/browse/GAP-4193
+
+27/9
+- HEY66: Evolution 下注出现 “there is a temporary problem with the game error”，provider 确认是 GSC+ server late response。玩家表示那场如果成功会赢约 3k，operator 投诉要他们承担后果。
+解决：Evolution 已换 transfer line，继续 monitor 是否再出现。Resolved
+https://gamingsoft.atlassian.net/browse/GAP-4217
+- WYNN: UUSlots 余额无端多加，这次突然多了 80k，这种情况已经发生几次 (TUR-21002 / TUR-21085)。
+解决：已把多余 balance withdraw 出来。Resolved
+https://gamingsoftjcmm.atlassian.net/browse/TUR-22001
+
+28/9
+- ALFAWIN216: 24/9 已给玩家账号和下注记录，GSC+ team 长时间没有消息。
+解决：Production Credential 已提供给客户。Resolved
+https://gamingsoft.atlassian.net/browse/GAS-4143
+- W138 / Prime88 / GOPLAY711 / Solarbet: 大量 newly registered players spam，operator 问是不是我们的 test account。W138 operator 已自行 suspend，其他回复不是我们的 test account。
+SS-2347 programmer 未回复，目前仍 Pending Resolve。
+https://gamingsoftjcmm.atlassian.net/browse/W138-472
+https://gamingsoftjcmm.atlassian.net/browse/PRIM-191
+https://gamingsoftjcmm.atlassian.net/browse/GOP-720
+https://gamingsoftjcmm.atlassian.net/browse/SS-2347
+
+29/9
+- 3WEBET: CMD 一开始提供错误 goal timing，导致玩家跟 operator 辩论。
+解决：CS 追问后 CMD 承认并提供正确 timing；operator 已向 AM complain。Resolved
+https://i.imgur.com/KqBcMNG.png
+- BETASIA: 手机版网站 lagging，点击其他页面会一直 load，programmer 正查询中。
+目前仍 Pending Resolve。
+https://gamingsoftjcmm.atlassian.net/browse/BT-735
+
+
+Internal Team (4 cases: AM x2, PG Team x1, API Operation Team x1)
+
+3/9
+- (GS - GSG - 16Bijoy BDT): AM Terrance 重复创建 operator support group，容易造成 support 跟错群。
+解决：AM 说忘记了，反馈后有说会删新的。Resolved
+https://prnt.sc/R110WudFVFzr
+https://prnt.sc/z2Ibei7phqDP
+
+7/9
+- (GS - CMMPRO - EUVIP): EUVIP 要 Globepay365 production credential，PG team 说已发给 programmer 并 set live，但 operator 没收到。流程不清楚到底是 CS 跟 programmer 拿了再发，还是 programmer 直接发。
+解决：最后通知 AM 协助发送 credential。Resolved
+https://gamingsoftjcmm.atlassian.net/browse/PGS-19
+- (Bluff Buff x cs support group): Operator 询问 Akashicpay 之前遗失的 balance 谁会退，甚至提到影响运营。AM Justina 一直没有 react，CS follow up 也没有任何反应，即使 operator 一直在催，回复效率有待提升。
+目前仍 Pending Resolve。
+
+22/9
+- (GS-API-STARLINK INTERNATIONAL NV): Operation team 对 provide production 的回复有矛盾。四月 lingling 已说 PGK 可以提供，九月 Ashley 又说需要 pass staging 才能提供，中间催 ETA 也用了几个月。虽然 operator 最后说可以暂时 ignore，但回复内容矛盾而且用时很长。
+解决：operator 同意暂时 ignore，工单结案。Resolved
+https://gamingsoftjcmm.atlassian.net/browse/AI-14899
+
+
+Conclusion
+其他已经 Resolved，目前还有以下工单 Pending Resolve。
+
+Operator
+1. GSCPLUS - ALPA AURABET {S} - 剩下未收到的产品 credential 从 27/8 开单到现在都未收到回复。目前仍 Pending Resolve。
+https://gamingsoftjcmm.atlassian.net/browse/APIS-3748
+2. GS - GSG - Smvegas MY - 希望 GSG BO 能直接显示 Evolution 完整 bet details，方便 operator 自己查询。目前仍 Pending Resolve。
+3. GS-API-CL1356 {A}{D} - 提供错误 account（FB8C / 博乐会所 opcode，应为 XDHK）。目前仍 Pending Resolve。
+https://gamingsoftjcmm.atlassian.net/browse/GI-29090
+https://gamingsoftjcmm.atlassian.net/browse/AI-15976
+4. GS-API-HWT(JILI) {D} MTS236 - 很多 JILI 账号没有完成创建。目前仍 Pending Resolve。
+https://gamingsoftjcmm.atlassian.net/browse/AI-16000
+5. GSCPLUS - ALVA ALVARONTECH {S} - Digitain TRY 仍 pending currency，暂时没有明确 ETA。Betby 已完成。目前仍 Pending Resolve。
+https://gamingsoft.atlassian.net/browse/GAA-831
+6. GS - GSG - MBX96 / Alibaba33 - BO 不稳定（SG IP），Holabet168 已正常，剩下两个等 programmer 回复。目前仍 Pending Resolve。
+https://gamingsoftjcmm.atlassian.net/browse/MBX96-253
+https://gamingsoftjcmm.atlassian.net/browse/ALIBABA33-823
+7. GS-GSG-V12WIN - BO 无法 load，怀疑 CDN 供应商问题，还在等 programmer 回复。目前仍 Pending Resolve。
+https://gamingsoftjcmm.atlassian.net/browse/V12WIN-276
+8. GS - GSG - Solarbet SG - spam register，programmer 未回复。目前仍 Pending Resolve。
+https://gamingsoftjcmm.atlassian.net/browse/SS-2347
+9. BETASIA - 手机版 frontend lagging，programmer 正查询中。目前仍 Pending Resolve。
+https://gamingsoftjcmm.atlassian.net/browse/BT-735
+
+Internal Team
+1. Bluff Buff - Akashicpay 遗失 balance 谁负责退还，AM Justina 一直没有回复。目前仍 Pending Resolve。
